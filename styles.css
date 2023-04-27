@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: #fff;
+  font-size: 1.125rem;
+  font-family: system-ui;
+  line-height: 1.5;
+  background-color: hsl(0, 0%, 100%);
+}
+
+section {
+  padding-block: 3rem;
+}
+
+section:nth-child(even) {
+  color: #323232;
+  background-color: #fff;
+}
+section:nth-child(odd) {
+  color: #efefef;
+  background-color: #000;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 65ch);
+  margin-inline: auto;
+}
+
+.logo {
+  color: #fff;
+  width: 7rem;
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: 900%;
+  mix-blend-mode: difference;
+}
+
+/* .logo::after {
+  content: ".";
+  color: rgb(243, 12, 12);
+  font-size: 3rem;
+  font-weight: 900%;
+} */
+@media (width > 980px) {
+  .logo {
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+/* remove  mix-blend-mode: difference; if you are using a image logo. have a white logo. then turn  mix-blend-mode: difference; back ons */
